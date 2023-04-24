@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom"
 import Login from './Login'
 import Signup from './Signup'
+import CartBtn from './CartBtn'
 
 const Navbar = () => {
   return (
@@ -34,6 +35,7 @@ const Navbar = () => {
 
        <Login/>
        <Signup/>
+       <CartBtn/>
 {/* <Log
 <Signup/>
 <CartBtn/>
