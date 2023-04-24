@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { delItem } from '../redux/actions/index'
 import { Link } from 'react-router-dom'
+import "../redux/reducers/addItem"
 
 const Cart = () => {
 	const state=useSelector((state)=>state.addItem)

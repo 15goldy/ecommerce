@@ -36,10 +36,7 @@ const Navbar = () => {
        <Login/>
        <Signup/>
        <CartBtn/>
-{/* <Log
-<Signup/>
-<CartBtn/>
-  */}
+
        
 </div>
 </div>

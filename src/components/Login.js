@@ -1,9 +1,8 @@
 import React from "react";
-// import '../../node_modules/font-awesome/css/font-awesome.min.css';
 const Login = () => {
   return (
     <div>
-      {/* <!-- Button trigger modal --> */}
+     
       <button
         type="button"
         className="btn btn-outline-dark ms-auto"
@@ -36,11 +35,9 @@ const Login = () => {
             </div>
             <div className="modal-body">
 
-					
-							<button className="btn btn-danger w-100 mb-2"> <span className="fa fa-google me-2"> </span> Sign in with Google </button>
-							<button className="btn btn-primary w-100 mb-2"> <span className="fa fa-facebook"> </span> Sign in with Facebook </button>
-							{/* <button className=""> Facebook </button>
-							<button className=""> Mobile number</button> */}
+			<button className="btn btn-danger w-100 mb-2"> <span className="fa fa-google me-2"> </span> Sign in with Google </button>
+			<button className="btn btn-primary w-100 mb-2"> <span className="fa fa-facebook"> </span> Sign in with Facebook </button>
+						
 				
               <form>
                 <div className="mb-3">

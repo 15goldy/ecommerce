@@ -12,6 +12,8 @@ const Product = () => {
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
 
+
+//   we stored usedispatch in a variable
 	const dispatch=useDispatch()
 	
 const[cartBtn,setCartBtn]=useState("Add to Cart")
