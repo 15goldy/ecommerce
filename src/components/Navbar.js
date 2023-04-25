@@ -3,11 +3,12 @@ import {Link} from "react-router-dom"
 import Login from './Login'
 import Signup from './Signup'
 import CartBtn from './CartBtn'
+import "./Product.css"
 
 const Navbar = () => {
   return (
-    <>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary fw-bold">
+   <div className='body'>
+    <nav className="navbar navbar-expand-lg bg-body-tertiary fw-bold navStyle">
 <div className="container-fluid py-2">
 
 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +32,11 @@ const Navbar = () => {
  
  
   </ul>
-        <Link className="navbar-brand mx-auto fw-bold site" to="/">NINJA's</Link>
+        <Link className="navbar-brand mx-auto fw-bold site" to="/">
+        <div class="boxes rotate-360-anticlockwise"> NINJA's </div>
+         </Link>
+
+         
 
        <Login/>
        <Signup/>
@@ -42,7 +47,7 @@ const Navbar = () => {
 </div>
 </nav>
 
-    </>
+</div>
   )
 }
 

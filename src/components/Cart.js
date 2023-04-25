@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { delItem } from '../redux/action'
+import { addItem, delItem } from '../redux/action'
 import { Link } from 'react-router-dom'
 import "../redux/reducers/addItem"
 
@@ -13,6 +13,15 @@ const Cart = () => {
      dispatch(delItem (item))
 	 }
 
+	 const handlePlus=(cartItem)=>{
+		dispatch(addItem(cartItem))
+	 }
+
+	 const handleMinus=(cartItem)=>{
+		dispatch(delItem(cartItem))
+	 }
+
+
 
 
 	const cartItems=(cartItem)=>{
@@ -23,11 +32,17 @@ const Cart = () => {
 					<button onClick={()=>handleClose(cartItem)} className='btn-close float-end' aria-label='close'> </button>
 				<div className="row justify-content-center">
 				<div className="col-md-4">
-					<img src={cartItem.img} alt={cartItem.title} height="200px" width="180px"/>
+					<img src={cartItem.image} alt={cartItem.title} height="200px" width="180px"/>
 				</div>
 					<div className="col-md-4 ">
 						<h3> {cartItem.title}</h3>
-						<p className='lead fw-bold'> ${cartItem.price}</p>
+						<p className='lead fw-bold'>
+							{cartItem.qty} X ${cartItem.price} = $
+					    	{cartItem.qty * cartItem.price}
+							</p>
+							<button className='btn btn-outline-dark me-4' onClick={()=>handlePlus(cartItem)}><i className='fa fa-plus'></i></button>
+							<button className='btn btn-outline-dark me-4' onClick={()=>handleMinus(cartItem)}><i className='fa fa-minus'></i></button>
+						
 					</div>
 				</div>
 				</div>

@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Skeleton from "react-loading-skeleton";
 import { Link } from "react-router-dom";
+import "./Product.css"
 
 const Products = () => {
   const [data, setData] = useState([]);
@@ -67,7 +68,7 @@ const filterProduct=(category)=>{
           return (
             <>
               <div className="col-md-3 mb-4">
-                <div className="card h-100 text-center p-4  cardHover" key={product.id}>
+                <div className="card h-100 text-center p-4  cardHover bg-image hover-zoom" key={product.id}>
                   <img
                     src={product.image}
                     className="card-img-top"

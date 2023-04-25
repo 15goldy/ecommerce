@@ -12,6 +12,7 @@ import Products from './components/Products';
 import Signup from './components/Signup';
 import Home from './components/Home';
 import Product from './components/Product';
+import CheckOut from './components/CheckOut';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path='/login' element={<Login/>} />
       <Route path='/signup' element={<Signup/>} />
       <Route path='/cart' element={<Cart/>} />
+      <Route path='/checkout' element={<CheckOut/>} />
     </Routes>
    <Footer/>
     </>
