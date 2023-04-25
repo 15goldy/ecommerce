@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import "../redux/reducers/addItem"
+
 
 
 
       const CartBtn= () => {
 	
 	// we get a state of addItems
-	//  we write the name of file not the function.
+	//  we write the name of the file from which we want to have our state. and not the function
 	const state=useSelector((state)=>state.addItem)
 	return (
 		<div>

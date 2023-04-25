@@ -11,3 +11,5 @@ export const delItem=(product)=>{
         payload:product
     }
 }
+
+// in actions we tell redux what we want to do .

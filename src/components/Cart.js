@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { delItem } from '../redux/actions/index'
+import { delItem } from '../redux/action'
 import { Link } from 'react-router-dom'
 import "../redux/reducers/addItem"
 
@@ -10,7 +10,7 @@ const Cart = () => {
 	const dispatch=useDispatch()
 
    const handleClose=(item)=>{
-     dispatch(delItem(item))
+     dispatch(delItem (item))
 	 }
 
 
